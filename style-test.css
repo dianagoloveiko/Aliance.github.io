@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 100px;
+  }
+  
+  
+  
+  .swiper {
+    width: 100%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+  }
+  
+  .swiper-slide {
+    grid-column: 2 span;
+  }
+  
+  .content-card {
+    padding: 20px;
+    min-height: 200px;
+    font-family: sans-serif;
+    background-color: wheat;
+  }
+  
+ 
+  
+  @media (max-width: 1000px) {
+    .slider-1 .swiper-wrapper {
+      display: flex;
+      column-gap: 0;
+    }
+  }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная Aliance Production</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/script-test.js" defer></script>
+</head>
+<body>
+    <section class="screen1">
+        <!--Хедер обычный-->
+        <header class="header" >
+
+            <a  class="logo_link" href="index.html">
+                
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контрактное производство</a></li>
+                    <li><a href="#">Собственные торговые марки</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a class="header_tel" href="tel:+74996861014">+7 (499) 686-10-14</a>
+                <button type="button">Получить консультацию</button>
+            </div>
+           
+        </header>
+
+        <!--Хедер при адаптиве-->
+        <div class="headerAdapt">
+         <!--Иконка бургер меню-->
+            <div class="burger">
+                 <div></div>
+            </div>
+            <a  class="logo_link_adapt" href="index.html">
+            </a>
+            <button type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9688 16.0822L19.2188 19.2384C19.125 19.7072 18.75 20.0197 18.2812 20.0197C10.4062 19.9884 4 13.5822 4 5.70718C4 5.23843 4.28125 4.86343 4.75 4.76968L7.90625 4.01968C8.34375 3.92593 8.8125 4.17593 9 4.58218L10.4688 7.98843C10.625 8.39468 10.5312 8.86343 10.1875 9.11343L8.5 10.4884C9.5625 12.6447 11.3125 14.3947 13.5 15.4572L14.875 13.7697C15.125 13.4572 15.5938 13.3322 16 13.4884L19.4062 14.9572C19.8125 15.1759 20.0625 15.6447 19.9688 16.0822Z" fill="white"/>
+                </svg>
+            </button>
+         </div>
+         <!--Бургер меню при адаптиве-->
+         <div class="menu_burger">
+            <ul>
+                <li> <a>О компании</a></li>
+                <li> <a>Контрактное производство</a></li>
+                <li> <a>Собственные марки</a></li>
+                <li> <a>Новости</a></li>
+                <li> <a>Контакты</a></li>
+            </ul>
+            <div class="menu_contacts">
+                <a  href="tel:+74996861014">+7 (499) 686-10-14</a>
+                <a href="#">г. Мосвка, Холодильный пер. 4к1с8</a>
+                <a href="mailto:a.dragunov@tdaliance.ru">a.dragunov@tdaliance.ru</a>
+
+            </div>
+         </div>
+        <div class="screen1_content">
+            <h1>Комплексное обеспечение товарами и расходными материалами бизнеса</h1>
+            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения.</p>
+            <button type="button">Подробнее о компании</button>
+            <div class="swiper slider-1"> 
+                <div class="swiper-wrapper grid">
+                    <div class="swiper-slide">
+                        <div class="content-card">
+                            <img src="images/icon1.svg">
+                            <p> Непрерывная работа c 2017 года</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-card">
+                            <img src="images/icon2.svg">
+                            <p> Вся продукция сертифицирована</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-card">
+                            <img src="images/icon3.svg">
+                            <p> Контроль качества на всех этапах</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-card">
+                            <img src="images/icon4.svg">
+                            <p> Возможны поставки по всей России</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-card">
+                            <img src="images/icon5.svg">
+                            <p> Оперативное производство</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+<script>
+    
+window.addEventListener('scroll', function() {
+   if (window.pageYOffset > 50) {
+    document.querySelector('.header').classList.add('active')
+   } else {
+    document.querySelector('.header').classList.remove('active')
+   }
+   }
+)
+window.addEventListener('scroll', function() {
+   if (window.pageYOffset > 50) {
+    document.querySelector('.headerAdapt').classList.add('active')
+   } else {
+    document.querySelector('.headerAdapt').classList.remove('active')
+   }
+   }
+)
+
+document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.menu_burger').classList.toggle('open');
+    })
+</script>
+</body>
+</html>
