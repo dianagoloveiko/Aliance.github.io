@@ -18,6 +18,11 @@
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
   }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+  }
   
   .swiper-slide {
     grid-column: 2 span;
@@ -34,6 +39,10 @@
   
   @media (max-width: 1000px) {
     .slider-1 .swiper-wrapper {
+      display: flex;
+      column-gap: 0;
+    }
+    .slider-2 .swiper-wrapper {
       display: flex;
       column-gap: 0;
     }

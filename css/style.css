@@ -155,7 +155,8 @@ li {
       letter-spacing: 0%;
       color: white; }
   .screen1 .headerAdapt.active {
-    background-color: white; }
+    background-color: white;
+    z-index: 1000; }
     .screen1 .headerAdapt.active .burger {
       background: url("../images/burgerBlack.svg") no-repeat center center; }
     .screen1 .headerAdapt.active .burger.active {
@@ -171,7 +172,8 @@ li {
     color: black;
     -webkit-transition: 1s;
     transition: 1s;
-    height: 74px; }
+    height: 74px;
+    z-index: 1000; }
     .screen1 .header.active .logo_link {
       background: url("../images/logoBlack.svg") no-repeat left top;
       z-index: 100; }
@@ -191,7 +193,7 @@ li {
             flex-direction: column;
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: 65px;
     width: 375px;
     z-index: 100;
     background-color: white;
@@ -257,6 +259,130 @@ li {
       padding-left: 20px;
       font-size: 14px; }
 
+.screen2 {
+  padding: 0px 150px 100px 150px; }
+  .screen2 h2 {
+    margin-top: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    position: relative; }
+  .screen2 h2::before {
+    content: " ";
+    background-color: #5C8EE5;
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    top: -30px; }
+  .screen2 .swiper {
+    width: 100%; }
+  .screen2 .grid2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0px; }
+  .screen2 .swiper-slide {
+    grid-column: 2 span; }
+  .screen2 .content-card {
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: transparent;
+    text-align: left; }
+    .screen2 .content-card h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: #5C8EE5;
+      position: relative; }
+    .screen2 .content-card h3::after {
+      content: "";
+      background-color: #EBEBF0;
+      width: 220px;
+      height: 1px;
+      position: absolute;
+      top: 25px;
+      left: 70px; }
+    .screen2 .content-card h4 {
+      padding-top: 20px;
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 160%;
+      letter-spacing: 0%; }
+    .screen2 .content-card p {
+      padding-top: 10px;
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0%;
+      color: #828A99; }
+  .screen2 button {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #5C8EE5;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .screen2 button::before {
+    content: " ";
+    background-color: #5C8EE5;
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    top: 13px; }
+  .screen2 .typeofproduction {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px 550px; }
+    .screen2 .typeofproduction a {
+      display: block;
+      border: solid 1px #EBEBF0;
+      padding: 40px 50px 0 50px; }
+      .screen2 .typeofproduction a h3 {
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 160%;
+        letter-spacing: 0%; }
+      .screen2 .typeofproduction a p {
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0%;
+        color: #828A99;
+        margin-top: 20px; }
+    .screen2 .typeofproduction a:nth-child(1) {
+      background: url("../images/typeofproduction/picture1.svg") no-repeat right bottom; }
+    .screen2 .typeofproduction a:nth-child(2) {
+      background: url("../images/typeofproduction/picture2.svg") no-repeat right bottom; }
+    .screen2 .typeofproduction a:nth-child(3) {
+      background: url("../images/typeofproduction/picture3.svg") no-repeat right bottom; }
+    .screen2 .typeofproduction a:nth-child(4) {
+      background: url("../images/typeofproduction/picture3.svg") no-repeat right bottom; }
+    .screen2 .typeofproduction a:nth-child(5) {
+      background: url("../images/typeofproduction/picture1.svg") no-repeat right bottom; }
+    .screen2 .typeofproduction a:nth-child(6) {
+      background: url("../images/typeofproduction/picture2.svg") no-repeat right bottom; }
+    .screen2 .typeofproduction a:hover {
+      border: solid 1px #5C8EE5;
+      cursor: pointer; }
+      .screen2 .typeofproduction a:hover h3 {
+        color: #5C8EE5; }
+
 @media (max-width: 1330px) {
   .screen1 .header nav ul li {
     padding-right: 10px; }
@@ -282,15 +408,39 @@ li {
     display: -ms-flexbox;
     display: flex; }
   .screen1 .screen1_content {
-    padding: 200px 30px 10px 30px; }
+    padding: 100px 30px 10px 30px; }
     .screen1 .screen1_content h1 {
-      font-size: 48px; }
+      font-size: 44px; }
     .screen1 .screen1_content p {
       font-size: 14px; }
     .screen1 .screen1_content button {
       margin: o auto;
       margin-bottom: 20px;
       font-size: 14px;
-      height: 62px; } }
+      height: 62px; }
+
+  .screen2 {
+    padding: 100px 30px 100px 30px; }
+    .screen2 h2 {
+      font-size: 36px; }
+    .screen2 .content-card h3 {
+      font-size: 40px; }
+    .screen2 .content-card h4 {
+      font-size: 20px; }
+    .screen2 .content-card p {
+      font-size: 14px; }
+    .screen2 .typeofproduction {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 550px 550px 550px; } }
+@media (max-width: 800px) {
+  .screen2 .typeofproduction {
+    grid-template-columns: 1fr;
+    grid-template-rows: 430px 430px 430px 430px 430px 430px; }
+    .screen2 .typeofproduction a {
+      padding-top: 10px; }
+      .screen2 .typeofproduction a h3 {
+        font-size: 20px; }
+      .screen2 .typeofproduction a p {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */

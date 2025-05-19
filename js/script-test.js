@@ -38,17 +38,92 @@ window.addEventListener('DOMContentLoaded', () => {
       '(max-width: 1200px)',
       '.slider-1',
       {
-        loop: true,
+        
+        spaceBetween: 32,
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        
+      },
+     
+      someFunc
+    );
+    resizableSwiper(
+      '(max-width: 800px)',
+      '.slider-1',
+      {
+        spaceBetween: 32,
+        slidesPerView: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        
+        
+      },
+      
+      someFunc
+    );
+     resizableSwiper(
+      '(max-width: 500px)',
+      '.slider-1',
+      {
         spaceBetween: 32,
         slidesPerView: 1,
         pagination: {
           el: '.swiper-pagination',
+          type: 'bullets',
           clickable: true,
         },
         
       },
       someFunc
     );
-  
+     resizableSwiper(
+      '(max-width: 1400px)',
+      '.slider-2',
+      { 
+        spaceBetween: 15,
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }, 
+      },
+      someFunc
+    );
+     resizableSwiper(
+      '(max-width: 1200px)',
+      '.slider-2',
+      { 
+        spaceBetween: 15,
+        slidesPerView: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }, 
+      },
+      someFunc
+    );
+    resizableSwiper(
+      '(max-width: 800px)',
+      '.slider-2',
+      { 
+        spaceBetween: 15,
+        slidesPerView: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }, 
+      },
+      someFunc
+    );
+   
+    
+     
     
   });
