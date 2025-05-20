@@ -416,6 +416,51 @@ li {
       cursor: pointer; }
       .screen2 .trademarks a:hover h3 {
         color: #5C8EE5; }
+  .screen2 .mission {
+    margin-top: 100px;
+    margin-left: -150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .screen2 .mission div:first-child {
+      width: 50%; }
+      .screen2 .mission div:first-child img {
+        width: 100%; }
+    .screen2 .mission div:last-child {
+      width: 50%;
+      padding-left: 100px; }
+      .screen2 .mission div:last-child h2 {
+        margin-top: 50px; }
+      .screen2 .mission div:last-child p {
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0%;
+        color: #828A99;
+        padding-top: 10px; }
+      .screen2 .mission div:last-child a {
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0%;
+        color: #5C8EE5;
+        position: relative;
+        padding-left: 60px;
+        margin-top: 80px;
+        margin-bottom: 20px; }
+      .screen2 .mission div:last-child a::before {
+        content: " ";
+        background-color: #5C8EE5;
+        width: 40px;
+        height: 1px;
+        position: absolute;
+        left: 0px;
+        top: 13px; }
 
 @media (max-width: 1330px) {
   .screen1 .header nav ul li {
@@ -469,7 +514,9 @@ li {
     .screen2 .trademarks {
       grid-template-columns: 1fr; }
       .screen2 .trademarks a:last-child {
-        margin-top: 0; } }
+        margin-top: 0; }
+    .screen2 .mission div:last-child p {
+      font-size: 14px; } }
 @media (max-width: 800px) {
   .screen2 .typeofproduction {
     grid-template-columns: 1fr;
@@ -482,14 +529,34 @@ li {
         font-size: 14px; }
   .screen2 h2 span {
     display: none; }
-  .screen2 .trademarks a p {
-    padding-left: 20px;
-    padding-top: 40px; }
+  .screen2 .trademarks a {
+    padding: 30px 20px 20px 0; }
+    .screen2 .trademarks a h3 {
+      font-size: 20px;
+      padding-left: 180px; }
+    .screen2 .trademarks a p {
+      padding-left: 20px;
+      padding-top: 100px;
+      font-size: 14px; }
   .screen2 .trademarks a:first-child {
-    background-position: 50px 30px; }
+    background-position: 30px 30px; }
   .screen2 .trademarks a:last-child {
-    background-position: 50px 30px; }
+    background-position: 30px 30px; }
     .screen2 .trademarks a:last-child p {
-      padding-top: 100px; } }
+      padding-top: 120px; }
+  .screen2 .mission {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: -30px; }
+    .screen2 .mission div:first-child {
+      width: 100%; }
+    .screen2 .mission div:last-child {
+      width: 100%;
+      padding-left: 150px;
+      padding-right: 30px; }
+      .screen2 .mission div:last-child h2 {
+        margin-top: 80px; } }
 
 /*# sourceMappingURL=style.css.map */
