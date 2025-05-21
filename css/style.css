@@ -410,12 +410,16 @@ li {
     .screen2 .trademarks a:first-child {
       background: url("../images/trademarks/AG.svg") no-repeat 50px center; }
     .screen2 .trademarks a:last-child {
-      background: url("../images/trademarks/AP.svg") no-repeat 50px center; }
+      background: url("../images/trademarks/APGray.svg") no-repeat 50px center; }
     .screen2 .trademarks a:hover {
       border: solid 1px #5C8EE5;
       cursor: pointer; }
       .screen2 .trademarks a:hover h3 {
         color: #5C8EE5; }
+    .screen2 .trademarks a:first-child:hover {
+      background: url("../images/trademarks/AGBlue.svg") no-repeat 50px center; }
+    .screen2 .trademarks a:last-child:hover {
+      background: url("../images/trademarks/AP.svg") no-repeat 50px center; }
   .screen2 .mission {
     margin-top: 100px;
     margin-left: -150px;
@@ -461,6 +465,76 @@ li {
         position: absolute;
         left: 0px;
         top: 13px; }
+  .screen2 .partner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .screen2 .partner .partnerContent {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 45%; }
+      .screen2 .partner .partnerContent .list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-top: 20px; }
+        .screen2 .partner .partnerContent .list .list1 li {
+          font-family: "Noto Sans", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          letter-spacing: 0%;
+          padding-left: 40px; }
+        .screen2 .partner .partnerContent .list .list1 li:nth-child(1) {
+          background: url("../images/partner/sprite.svg") no-repeat left top; }
+        .screen2 .partner .partnerContent .list .list1 li:nth-child(2) {
+          background: url("../images/partner/sprite.svg") no-repeat left -30px; }
+        .screen2 .partner .partnerContent .list .list1 li:nth-child(3) {
+          background: url("../images/partner/sprite.svg") no-repeat left -60px; }
+        .screen2 .partner .partnerContent .list .list1 li:nth-child(4) {
+          background: url("../images/partner/sprite.svg") no-repeat left -90px; }
+        .screen2 .partner .partnerContent .list .list1 li:nth-child(5) {
+          background: url("../images/partner/sprite.svg") no-repeat left -120px; }
+        .screen2 .partner .partnerContent .list .list2 li {
+          font-family: "Noto Sans", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          letter-spacing: 0%;
+          padding-left: 40px; }
+        .screen2 .partner .partnerContent .list .list2 li:nth-child(1) {
+          background: url("../images/partner/sprite.svg") no-repeat left -150px; }
+        .screen2 .partner .partnerContent .list .list2 li:nth-child(2) {
+          background: url("../images/partner/sprite.svg") no-repeat left -180px; }
+        .screen2 .partner .partnerContent .list .list2 li:nth-child(3) {
+          background: url("../images/partner/sprite.svg") no-repeat left -210px; }
+        .screen2 .partner .partnerContent .list .list2 li:nth-child(4) {
+          background: url("../images/partner/sprite.svg") no-repeat left -240px; }
+        .screen2 .partner .partnerContent .list .list2 li:nth-child(5) {
+          background: url("../images/partner/sprite.svg") no-repeat left -270px; }
+    .screen2 .partner .frame {
+      width: 45%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 160px 160px 160px;
+      margin-top: 80px; }
+      .screen2 .partner .frame a {
+        display: block;
+        border: solid 1px #828A99;
+        background: url("../images/partner/burgerBlack.svg") no-repeat center center; }
+      .screen2 .partner .frame a:hover {
+        background: url("../images/partner/burgerColor.svg") no-repeat center center; }
 
 @media (max-width: 1330px) {
   .screen1 .header nav ul li {
@@ -516,7 +590,16 @@ li {
       .screen2 .trademarks a:last-child {
         margin-top: 0; }
     .screen2 .mission div:last-child p {
-      font-size: 14px; } }
+      font-size: 14px; }
+    .screen2 .partner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .screen2 .partner .partnerContent {
+        width: 100%; }
+      .screen2 .partner .frame {
+        width: 100%; } }
 @media (max-width: 800px) {
   .screen2 .typeofproduction {
     grid-template-columns: 1fr;
@@ -557,6 +640,14 @@ li {
       padding-left: 150px;
       padding-right: 30px; }
       .screen2 .mission div:last-child h2 {
-        margin-top: 80px; } }
+        margin-top: 80px; }
+  .screen2 .partner .partnerContent .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .screen2 .partner .frame {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 110px 110px 110px 110px; } }
 
 /*# sourceMappingURL=style.css.map */

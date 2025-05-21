@@ -477,12 +477,17 @@ li {
            background: url('../images/trademarks/AG.svg') no-repeat 50px center;
         }
         a:last-child {
-           background: url('../images/trademarks/AP.svg') no-repeat 50px center;
+           background: url('../images/trademarks/APGray.svg') no-repeat 50px center;
         }
         a:hover {
             border: solid 1px $blue;
             cursor: pointer;
             h3 {color: $blue;}
+        }
+        a:first-child:hover {
+             background: url('../images/trademarks/AGBlue.svg') no-repeat 50px center;
+        }a:last-child:hover {
+             background: url('../images/trademarks/AP.svg') no-repeat 50px center;
         }
       }
       .mission {
@@ -533,6 +538,86 @@ li {
                 left: 0px;
                 top: 13px;
       }
+        }
+      }
+      .partner {
+        display: flex;
+        justify-content: space-between;
+        .partnerContent {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            .list {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                .list1 {
+                    li {
+                        font-family: $f-family;
+                        font-weight: 400;
+                        font-size: $text;
+                        line-height: 160%;
+                        letter-spacing: 0%;
+                        padding-left: 40px;
+                    }    
+                    li:nth-child(1) {
+                    background: url('../images/partner/sprite.svg') no-repeat left top;
+                     }
+                    li:nth-child(2) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -30px;
+                    }   
+                     li:nth-child(3) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -60px;
+                    }   
+                     li:nth-child(4) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -90px;
+                    }   
+                     li:nth-child(5) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -120px;
+                    }               
+                }
+                .list2 {
+                    li {
+                        font-family: $f-family;
+                        font-weight: 400;
+                        font-size: $text;
+                        line-height: 160%;
+                        letter-spacing: 0%;
+                        padding-left: 40px;
+                    }    
+                    li:nth-child(1) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -150px;
+                     }
+                    li:nth-child(2) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -180px;
+                    }   
+                     li:nth-child(3) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -210px;
+                    }   
+                     li:nth-child(4) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -240px;
+                    }   
+                     li:nth-child(5) {
+                    background: url('../images/partner/sprite.svg') no-repeat left -270px;
+                    }               
+                }
+                
+            }
+        }
+        .frame {
+            width: 45%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 160px 160px 160px;
+            margin-top: 80px;
+            a {
+                display: block;
+                border: solid 1px $gray;
+                background: url('../images/partner/burgerBlack.svg') no-repeat center center;
+            }
+            a:hover {
+                background: url('../images/partner/burgerColor.svg') no-repeat center center;
+            }
         }
       }
 }
@@ -619,6 +704,15 @@ li {
                 p {font-size: 14px;}
             }
         }
+        .partner {
+            flex-direction: column;
+            .partnerContent {
+                width: 100%;
+            }
+            .frame {
+                width: 100%;
+            }
+        }
     }
 
   }
@@ -671,6 +765,17 @@ li {
             padding-left: 150px;
             padding-right: 30px;
             h2 { margin-top: 80px;}
+        }
+       }
+       .partner {
+        .partnerContent {
+            .list {
+                flex-direction: column;
+            }
+        }
+        .frame {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 110px 110px 110px 110px;
         }
        }
     }
